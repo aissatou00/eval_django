@@ -1,6 +1,6 @@
+from django.contrib.auth.models import Reservation    
 from rest_framework import serializers
-from django.contrib.auth.models import Reservation
-    
+
 class ReservationSerializer(serializers.Serializer):
     id = serializers.IntegerField(read_only=True)
     Hogwarts_house = serializers.ChoiceField(
